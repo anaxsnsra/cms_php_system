@@ -1,14 +1,4 @@
 <?php
-
-if (isset($_SESSION['address_id'])) {
-    $_SESSION['address_id'];
-    $address = $_SESSION['address_id'];
-    $query = "SELECT * FROM address WHERE address_id = {$address}";
-    $select_user_address = mysqli_query($con, $query);
-    while ($row = mysqli_fetch_array($select_user_address)) {
-        $address_id = $row['address_id'];
-        $address_line_one = $row['address_line_one'];
-    }
     if (isset($_POST['edit_address'])) {
 
         $user_address = $_POST['address'];
@@ -22,25 +12,47 @@ if (isset($_SESSION['address_id'])) {
         }
         echo "<p class='bg-success'>Address been updated. <a href='./user_profile.php'>View Profile</a></p>";
     }
-}
 ?>
-<h1>Edit profile</h1>
-<div class="col-6 bg-light">
+<h1>Edit Address</h1>
+<div class="col-12 bg-light">
 <form action="" method="post">
     <table>
         <tr>
-            <td>
-                <div class="form-group">
-                    <label for="user_address">Your address</label><br>
-                    <textarea  class="address" name="address" ><?php echo $address_line_one  ?></textarea>
-                </div>
-            </td>
+            <td>Full name</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td><input type="text" value="<?php echo $user_firstname . " " . $user_lastname ?>" name="fullname"></td>
+            <td><input type="text" size="50" name="address" value="<?php echo $address_line_one  ?>"></td>
+        <tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>State</td>
+        </tr>
+        <tr>
+            <td><input type="text" value="<?php echo $user_phone ?>" name="phoneNumber"></td>
+            <td><input type="text" value="<?php echo $state_name ?>" name="state"></td>
+        </tr>
+            <td></td>
+            <td>City</td>
+        </tr>
         <tr>
             <td>
                 <div class="form-group">
                     <input type="submit"  value="Save Changes" class="btn btn-primary" name="edit_address">
                 </div>
             </td>
+            <td>
+                <input type="text" name="city">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Postcode</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" name="postcode"></td>
         </tr>
     </table>
 </form>

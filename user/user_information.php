@@ -22,7 +22,7 @@ if (isset($_SESSION['username']))
 
 <div class="container">
 <div class="row">
-    <div class="col-4 bg-light">
+    <div class="col-5 bg-light">
         <div><h4>Personal Profile
                 <span>|</span>
                 <a href="./user_profile.php?source=edit_profile">Edit</a>
@@ -34,7 +34,7 @@ if (isset($_SESSION['username']))
     <div class="col-5 offset-1 bg-light address">
         <div><h4>Address Book
                 <span>|</span>
-                <a href="./user_profile.php?source=edit_address">Edit</a>
+                <a href="./user_profile.php?source=address_list">Edit</a>
             </h4>
         </div>
         <div>&nbsp;</div>

@@ -1,13 +1,5 @@
 <?php
-    if (isset($_SESSION['username'])) {
-        $_SESSION['username'];
-        $username = $_SESSION['username'];
-        $query = "SELECT * FROM user WHERE username = '{$username}'";
-        $select_user_profile_query = mysqli_query($con, $query);
-        while ($row = mysqli_fetch_array($select_user_profile_query)) {
-            $user_password = $row['user_password'];
-        }
-    }
+
     if (isset($_POST['reset_password']))
     {
         $user_password = $_POST['user_new_password'];
@@ -31,17 +23,21 @@
 
                 $query = "UPDATE user SET ";
                 $query .= "user_password = '{$hashed_password}' ";
-                $query .= "WHERE username = {$username}";
+                $query .= "WHERE username = '{$username}'";
 
                 $update_user_password = mysqli_query($con,$query);
+                if (!$update_user_password)
+                {
+                    die("QUERY FAILED" . mysqli_error($con));
+                }
+                echo "<p class='bg-light'>Password been updated</p>" . " " . "<a href='./user_profile.php'>View Profile</a>";
             }
-
         }
     }
 
 ?>
-<h1>Edit profile</h1>
-<div class="col-6 bg-light">
+<h1>Reset Password</h1>
+<div class="col-12 bg-light">
     <form action="" method="post">
         <table>
             <tr>
@@ -57,20 +53,23 @@
                 <td>
                     <div class="form-group">
                         <label for="user_phone">Enter new password</label><br>
-                        <input type="password" value="" class="phone" name="user_new_password">
+                        <input type="password" required name="user_new_password" id="user_new_password">
                     </div>
                 </td>
                 <td>
                     <div class="form-group">
                         <label for="user_firstname">Retype your new password</label><br>
-                        <input type="password" value="" class="lastname" name="user_lastname">
+                        <input type="password" required name="user_new_password_confirm" id="user_confirm_password">
                     </div>
+                </td>
+                <td>
+                    <p id="password-validate"></p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="form-group">
-                        <input type="submit"  value="Save Password" class="btn btn-primary" name="reset_password">
+                        <input type="submit"  value="Save Password" class="btn btn-primary" name="reset_password" onclick="return passValidate()">
                     </div>
                 </td>
             </tr>

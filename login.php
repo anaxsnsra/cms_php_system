@@ -35,7 +35,9 @@ include "layout/navigation.php";
             $db_email = $row['user_email'];
             $db_address_id = $row['address_id'];
             $db_phone = $row['user_phone'];
+            $db_zipcode_id = $row['zipcode_id'];
             $db_user_role = $row['user_role'];
+            $db_state_id = $row['state_id'];
         }
 
         $hash = crypt($password,$db_password);
@@ -49,6 +51,8 @@ include "layout/navigation.php";
             $_SESSION['address_id'] = $db_address_id;
             $_SESSION['user_phone'] = $db_phone;
             $_SESSION['user_role'] = $db_user_role;
+            $_SESSION['zipcode_id'] = $db_zipcode_id;
+            $_SESSION['state_id'] = $db_state_id;
 
             header("Location: index.php");
         }

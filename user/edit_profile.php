@@ -2,7 +2,6 @@
 
 if (isset($_SESSION['username']))
 {
-    $_SESSION['username'];
     $username = $_SESSION['username'];
     $query = "SELECT * FROM user WHERE username = '{$username}'";
     $select_user_profile_query = mysqli_query($con,$query);
@@ -50,7 +49,7 @@ if (isset($_SESSION['username']))
     ?>
 
 <h1>Edit profile</h1>
-<div class="col-6 bg-light">
+<div class="col-12 bg-light">
 <form action="" method="post">
     <table>
         <tr>
