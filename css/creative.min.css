@@ -511,3 +511,20 @@ textarea{
     margin-left: -15px;
     margin-right: auto;
 }
+
+.build-container{
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-left: 10px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

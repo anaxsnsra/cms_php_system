@@ -31,7 +31,20 @@
         </tr>
         <tr>
             <td><input type="text" value="<?php echo $user_phone ?>" name="phoneNumber"></td>
-            <td><input type="text" value="<?php echo $state_name ?>" name="state"></td>
+            <td><select name="user_state" id="">
+
+                    <?php
+                    $query = "SELECT * FROM state";
+                    $select_state = mysqli_query($con,$query);
+                    if (!$select_state);
+                    while ($row = mysqli_fetch_assoc($select_state)){
+                        $state_id = $row['state_id'];
+                        $state_name = $row['state_name'];
+
+                        echo "<option value='$state_id'>$state_name</option>";
+                    }
+                    ?>
+                </select></td>
         </tr>
             <td></td>
             <td>City</td>
@@ -43,7 +56,20 @@
                 </div>
             </td>
             <td>
-                <input type="text" name="city">
+                <select name="user_state" id="">
+
+                    <?php
+                    $query = "SELECT * FROM city_selangor";
+                    $select_state = mysqli_query($con,$query);
+                    if (!$select_state);
+                    while ($row = mysqli_fetch_assoc($select_state)){
+                        $state_id = $row['state_id'];
+                        $state_name = $row['state_name'];
+
+                        echo "<option value='$state_id'>$state_name</option>";
+                    }
+                    ?>
+                </select>
             </td>
         </tr>
         <tr>
