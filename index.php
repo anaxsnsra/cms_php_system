@@ -6,6 +6,8 @@
 <!--Navigation-->
 <?php
     include "layout/navigation.php";
+    $_SESSION = array();
+    session_destroy();
 ?>
 <section class="col serv" id="about">
     <div class="container">

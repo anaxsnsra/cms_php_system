@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c7b6435-60d6-4e57-9d88-2362f4ec12bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build_product_list_cpu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_case_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_cpu_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_graphic_card_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_hdd_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_motherboard_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_power_supply_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_ram_product_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/pc_ssd_product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layout/reset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.php" beforeDir="false" afterPath="$PROJECT_DIR$/build.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/creative.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/creative.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build_product_list_cpu.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/creative.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creative.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/navigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/edit_address.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/edit_address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/header_other_pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/layout/header_other_pages.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,48 +28,51 @@
     <session id="1501287706">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="14" />
+          <entry key="css" value="15" />
           <entry key="html" value="2" />
-          <entry key="js" value="10" />
-          <entry key="php" value="82" />
+          <entry key="js" value="11" />
+          <entry key="php" value="102" />
           <entry key="rnc" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="14" />
+          <entry key="CSS" value="15" />
           <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="82" />
+          <entry key="JavaScript" value="11" />
+          <entry key="PHP" value="102" />
           <entry key="RNG Compact" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1675" />
-          <entry key="js" value="1988" />
-          <entry key="php" value="26202" />
+          <entry key="js" value="2442" />
+          <entry key="php" value="31009" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1675" />
-          <entry key="HTML" value="184" />
-          <entry key="JavaScript" value="1988" />
-          <entry key="PHP" value="26018" />
+          <entry key="HTML" value="201" />
+          <entry key="JavaScript" value="2442" />
+          <entry key="PHP" value="30808" />
         </counts>
       </usages-collector>
     </session>
@@ -73,74 +82,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="242" column="95" selection-start-line="242" selection-start-column="95" selection-end-line="242" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build_test.php">
+        <entry file="file://$PROJECT_DIR$/layout/pc_case_product_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="544">
+              <caret line="32" column="90" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
+        <entry file="file://$PROJECT_DIR$/layout/reset.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/header_other_pages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layout/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user_profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user_register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="134" selection-start-line="27" selection-start-column="134" selection-end-line="27" selection-end-column="134" />
+            <state relative-caret-position="153">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -148,17 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/creative.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build_product_list_cpu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="419">
+              <caret line="208" selection-start-line="208" selection-end-line="208" />
             </state>
           </provider>
         </entry>
@@ -176,6 +137,8 @@
     <findStrings>
       <find>background-image</find>
       <find>background-ima</find>
+      <find>storedCasePrice</find>
+      <find>modal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,8 +161,6 @@
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/user_register.php" />
         <option value="$PROJECT_DIR$/layout/footer.php" />
-        <option value="$PROJECT_DIR$/layout/header_other_pages.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/creative.js" />
         <option value="$PROJECT_DIR$/user/user_information.php" />
         <option value="$PROJECT_DIR$/user/edit_profile.php" />
@@ -214,11 +175,26 @@
         <option value="$PROJECT_DIR$/build_all_pc_part.php" />
         <option value="$PROJECT_DIR$/build_product_list_case.php" />
         <option value="$PROJECT_DIR$/js/product_list_case.js" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/test.php" />
-        <option value="$PROJECT_DIR$/js/creative.min.js" />
         <option value="$PROJECT_DIR$/case_list.php" />
         <option value="$PROJECT_DIR$/build_test.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/layout/header_build_page.php" />
+        <option value="$PROJECT_DIR$/layout/header_other_pages.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/case_select.php" />
+        <option value="$PROJECT_DIR$/mobo_select.php" />
+        <option value="$PROJECT_DIR$/layout/pc_motherboard_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_cpu_product_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_ram_product_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_hdd_product_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_ssd_product.php" />
+        <option value="$PROJECT_DIR$/layout/pc_graphic_card_product_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_power_supply_product_list.php" />
+        <option value="$PROJECT_DIR$/layout/pc_build_function.php" />
+        <option value="$PROJECT_DIR$/layout/pc_case_product_list.php" />
+        <option value="$PROJECT_DIR$/js/creative.min.js" />
+        <option value="$PROJECT_DIR$/layout/reset.php" />
         <option value="$PROJECT_DIR$/build.php" />
       </list>
     </option>
@@ -236,8 +212,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="30" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -256,6 +231,22 @@
             <path>
               <item name="erinapcworkshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="erinapcworkshop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="erinapcworkshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="erinapcworkshop" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="erinapcworkshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="erinapcworkshop" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="creative.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="erinapcworkshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="erinapcworkshop" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -309,18 +300,22 @@
       <workItem from="1541910834592" duration="50139000" />
       <workItem from="1542080957653" duration="18881000" />
       <workItem from="1542120013218" duration="44022000" />
-      <workItem from="1542189009848" duration="993000" />
+      <workItem from="1542189009848" duration="14214000" />
+      <workItem from="1542247613861" duration="2077000" />
+      <workItem from="1542270725488" duration="29820000" />
+      <workItem from="1542472348366" duration="594000" />
+      <workItem from="1542632664352" duration="15112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278217000" />
+    <option name="totallyTimeSpent" value="339041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14977308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20272315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -347,18 +342,7 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/layout/header_other_pages.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/shoppingCart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -436,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="70" lean-forward="true" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layout/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -506,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/creative.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="525" column="22" selection-start-line="525" selection-start-column="22" selection-end-line="525" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build_product_list_case.php" />
     <entry file="file://$PROJECT_DIR$/js/product_list_case.js" />
     <entry file="file://$PROJECT_DIR$/product_list.php">
@@ -525,41 +495,11 @@
     <entry file="file://$PROJECT_DIR$/build_all_pc_part.php" />
     <entry file="file://$PROJECT_DIR$/build_product_list.php" />
     <entry file="file://$PROJECT_DIR$/case_list.php" />
-    <entry file="file://$PROJECT_DIR$/build.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="90" column="54" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build_test.php" />
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/header_other_pages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -570,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user_register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -584,17 +517,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/creative.min.js">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        <state relative-caret-position="885">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build_product_list_cpu.php">
+    <entry file="file://$PROJECT_DIR$/user_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case_select.php" />
+    <entry file="file://$PROJECT_DIR$/mobo_select.php" />
+    <entry file="file://$PROJECT_DIR$/layout/header_build_page.php" />
+    <entry file="file://$PROJECT_DIR$/build_product_list_cpu.php" />
+    <entry file="file://$PROJECT_DIR$/css/creative.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="521" column="6" selection-start-line="521" selection-start-column="1" selection-end-line="521" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/header_other_pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_motherboard_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_cpu_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_ram_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_hdd_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_ssd_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_graphic_card_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_power_supply_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_build_function.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/creative.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/reset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout/pc_case_product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="90" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="242" column="95" selection-start-line="242" selection-start-column="95" selection-end-line="242" selection-end-column="95" />
         </state>
       </provider>
     </entry>
