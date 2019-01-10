@@ -3,7 +3,7 @@ include "layout/header_other_pages.php";
 ?>
     <!--Navigation-->
 <?php
-include "layout/navigation.php";
+include "layout/userNavigation.php";
 ?>
 <?php
 
@@ -21,24 +21,9 @@ if (isset($_SESSION['username']))
         $user_password = $row['user_password'];
         $user_email = $row['user_email'];
         $user_phone = $row['user_phone'];
-    }
-
-    $address = $_SESSION['address_id'];
-    $query_address = "SELECT * FROM address WHERE address_id = {$address}";
-    $select_user_address = mysqli_query($con, $query_address);
-    while ($row = mysqli_fetch_array($select_user_address)) {
-        $address_id = $row['address_id'];
-        $address_line_one = $row['address_line_one'];
-    }
-
-    $state_query = "SELECT * FROM state WHERE state_id = {$_SESSION['state_id']}";
-    $select_user_state = mysqli_query($con, $state_query);
-    while ($row = mysqli_fetch_array($select_user_state)) {
-        $state_id = $row['state_id'];
-        $state_name = $row['state_name'];
+        $user_address = $row['address_id'];
     }
 }
-
 ?>
 <div class="row">
 <section class="col-sm-2">
@@ -65,14 +50,8 @@ if (isset($_SESSION['username']))
                     <a class="dropdown-item" href="./user_profile.php?source=address_list">Address Book</a>
                     <div class="dropdown-divider"></div>
                     <h6 class="dropdown-header">My Orders</h6>
-                    <a class="dropdown-item" href="#">My returns</a>
-                    <a class="dropdown-item" href="#">My cancellations</a>
+                    <a class="dropdown-item" href="order_status.php">Order Status</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="review">My Reviews</span>
-                </a>
             </li>
         </ul>
 </section>

@@ -7,25 +7,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">Promo</a>
+                    <a class="nav-link js-scroll-trigger" href="./index.php#about">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About us</a>
+                    <a class="nav-link js-scroll-trigger" href="./index.php#aboutPC">PC</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="./user_profile.php">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#service">Services</a>
+                    <a class="nav-link js-scroll-trigger" href="./index.php#service">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Track your order</a>
+                    <a class="nav-link js-scroll-trigger" href="">Track your order</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Currency</a>
+                    <a class="nav-link js-scroll-trigger" href="">Currency</a>
                 </li>
             </ul>
         </div>

@@ -1,9 +1,8 @@
 <div id="myMoboBlock" class="modal" style="overflow:scroll">
     <div class="modal-content">
-        <h1>Select Motherboard</h1>
+        <h1 class="moboSelect">Select Motherboard</h1>
         <div class="col-lg-9">
             <div class="row">
-
                 <?php
                 $query = "SELECT * FROM motherboard";
                 $select_all_mobo = mysqli_query($con, $query);
@@ -34,7 +33,7 @@
                                         <form action='build.php' method='get'>
                                         <input type='hidden' value='$mobo_model' name='selectMoboModel'>
                                         <input type='hidden' value='$mobo_price' name='selectMoboPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your mobo'>
+                                        <input type='submit' class='btn btn-primary' value='choose' style='margin-left: -10px'>
                                         </form>                                 
                                     </div> 
                          </div>

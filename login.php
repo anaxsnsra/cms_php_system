@@ -1,5 +1,5 @@
 <?php
-include "layout/header_other_pages.php";
+include "layout/header_pages.php";
 ?>
 
 <!--Navigation-->
@@ -27,7 +27,7 @@ include "layout/navigation.php";
 
         while ($row = mysqli_fetch_array($select_user_query))
         {
-            $db_id = $row['id'];
+            $db_id = $row['user_id'];
             $db_username = $row['username'];
             $db_firstname = $row['user_firstname'];
             $db_lastname = $row['user_lastname'];
@@ -35,9 +35,7 @@ include "layout/navigation.php";
             $db_email = $row['user_email'];
             $db_address_id = $row['address_id'];
             $db_phone = $row['user_phone'];
-            $db_zipcode_id = $row['zipcode_id'];
             $db_user_role = $row['user_role'];
-            $db_state_id = $row['state_id'];
         }
 
         $hash = crypt($password,$db_password);
@@ -45,41 +43,46 @@ include "layout/navigation.php";
         if (password_verify($password,$db_password))
         {
             $_SESSION['username'] = $db_username;
+            $_SESSION['user_id'] = $db_id;
             $_SESSION['user_firstname'] = $db_firstname;
             $_SESSION['user_lastname'] = $db_lastname;
             $_SESSION['user_email'] = $db_email;
             $_SESSION['address_id'] = $db_address_id;
             $_SESSION['user_phone'] = $db_phone;
             $_SESSION['user_role'] = $db_user_role;
-            $_SESSION['zipcode_id'] = $db_zipcode_id;
-            $_SESSION['state_id'] = $db_state_id;
+            $_SESSION['address_id'] = $db_address_id;
 
-            header("Location: index.php");
+            header("Location: ./userHomePage.php");
         }
         else
         {
             $error_message = "WRONG USERNAME OR PASSWORD";
-            echo $error_message;
         }
+
     }
 ?>
 <!-- Page Content -->
+<div align="center">
 <section class="bg-light">
     <form class="custom-form" action="" method="post" enctype="multipart/form-data" autocomplete="off">
-        <div class="form-group"><h1 class="text-center">Login to your account</h1></div>
+        <div class="form-group"><h1 class="text-center" style="color: saddlebrown">Login to your account</h1></div>
+        <?php if (isset($error_message)): ?>
+            <span><?php echo $error_message ?></span>
+        <?php endif; ?>
         <div class="form-group">
-            <label for="username" >Username</label>
-            <input type="text" value="" class="form-control" name="username" placeholder="Enter your username">
+            <label for="username" style="color: darkcyan" >Username</label>
+            <input type="text" required value="" class="form-control" name="username" placeholder="Enter your username">
         </div>
         <div class="form-group">
-            <label for="user_password">Password</label>
-            <input type="password" value="" class="form-control" name="user_password" placeholder="Enter your password">
+            <label for="user_password" style="color: darkcyan">Password</label>
+            <input type="password" required value="" class="form-control" name="user_password" placeholder="Enter your password">
         </div>
         <div class="form-group">
             <input type="submit" name="login" value="Login" class="btn btn-primary">
         </div>
     </form>
 </section>
+</div>
 <!-- /.container -->
 <!-- Footer -->
 <?php

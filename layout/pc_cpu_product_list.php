@@ -1,7 +1,7 @@
 <div id="myCpuBlock" class="modal" style="overflow:scroll">
     <div class="modal-content">
-        <h1>Select PC Cpu</h1>
-        <div class="col-lg-9">
+        <h1 class="selectCpu">Select PC Cpu</h1>
+        <div class="col-md-9">
             <div class="row">
                 <?php
                 $query = "SELECT * FROM pc_cpu";
@@ -41,7 +41,7 @@
                                 <form action='build.php' method='get'>
                                         <input type='hidden' value='$cpu_model' name='selectCpuModel'>
                                         <input type='hidden' value='$cpu_price' name='selectCpuPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your CPU'>
+                                        <input type='submit' class='btn btn-primary' value='choose'>
                                         </form> 
                                 </div>
                     </div>

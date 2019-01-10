@@ -5,12 +5,6 @@ session_start();
 include "db.php";
 ob_start();
 ?>
-<?php
-    if (!isset($_SESSION['user_role']))
-    {
-        header("Location: ./login.php");
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +15,7 @@ ob_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Erina's Pc Workshop</title>
 
     <!-- Bootstrap core CSS -->
 <!--    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
@@ -39,6 +33,9 @@ ob_start();
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 
 
 </head>

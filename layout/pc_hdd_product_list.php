@@ -1,6 +1,6 @@
 <div id="myHddBlock" class="modal" style="overflow:scroll">
-    <div class="modal-content" style="width: 1200px">
-        <h1>Select Hard Disk</h1>
+    <div class="modal-content" style="width: 1000px">
+        <h1 class="selectHdd">Select Hard Disk</h1>
         <div class="col-lg-9">
             <div class="row">
                 <?php
@@ -19,8 +19,8 @@
                     $pc_hdd_image = $row['hdd_image'];
 
                     echo "<div class='col-lg-4 col-md-6 mb-4'>
-                            <div class='card h-100'>
-                                 <img class='card-img-top' width='360px' height='300px' src='img/pc%20product/hdd/$pc_hdd_image'>
+                            <div class='card h-100' width='200px'>
+                                 <img class='card-img-top' width='1000px' height='200px' src='img/pc%20product/hdd/$pc_hdd_image'>
                                     <div class='card-body'>
                                         <h4 class='card-title'>
                                             <a href='#'>$hdd_brand  $hdd_model</a>
@@ -35,7 +35,7 @@
                                 <form action='build.php' method='get'>
                                         <input type='hidden' value='$hdd_model' name='selectHddModel'>
                                         <input type='hidden' value='$hdd_price' name='selectHddPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your HDD'>
+                                        <input type='submit' class='btn btn-primary' value='choose'>
                                         </form> 
                                 </div>
                     </div>

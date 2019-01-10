@@ -5,11 +5,9 @@
 ?>
 <!--Navigation-->
 <?php
-    include "layout/navigation.php";
-    $_SESSION = array();
-    session_destroy();
+    include "layout/userNavigation.php";
 ?>
-<section class="col serv" id="about">
+<section class="col serv" id="service">
     <div class="container service_container">
         <div class="row">
             <div class="col-lg-5 text-left">
@@ -45,22 +43,25 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
-                    <i class="fas fa-4x fa-play text-primary mb-3 sr-icon-4"></i>
-                    <h3 class="mb-3">Erina</h3>
-                    <p class="text-muted mb-0">information about the pc expert</p>
+                    <i class="fas fa-4x fa-laptop text-primary mb-3 sr-icon-4"></i>
+                    <h3 class="mb-3">Erin</h3>
+                    <p class="text-muted mb-0">Katrina Maria Binti Muhammad Shahril
+                        start build pc in year 2007</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
-                    <i><img src="img/profile/erin3.JPG" class="rounded-circle card-img mx-auto" alt=""></i>
+                    <i><img src="img/profile/erin3.jpg" class="rounded-circle card-img mx-auto" alt=""></i>
                     <h3 class="mb-3">Erina</h3>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box mt-5 mx-auto">
-                    <i class="fas fa-4x fa-headphones text-primary mb-3 sr-icon-4"></i>
+                    <i class="fas fa-4x fa-desktop text-primary mb-3 sr-icon-4"></i>
                     <h3 class="mb-3">Details</h3>
-                    <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+                    <p class="text-muted mb-0">Erina’s PC Workshop is about online pc product and pc customization.
+                        Customer can used the website system to purchase any pc product that available and build own pc equipment. This website will list all pc product and customers can buy each part separately. Custom PC build will display quotation for the price for each part been selected.
+                    </p>
                 </div>
             </div>
         </div>
@@ -69,7 +70,7 @@
 
     <hr class="my-4"
 
-<section id="services" class="bg-light">
+<section id="aboutPC" class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 text-center">
@@ -89,31 +90,6 @@
 
     <hr class="my-4"
 
-<section class="bg-success" id="portfolio">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery bg-light">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Product Category List</h2>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-                    <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<hr class="my-4">
 <!--Footer-->
 <?php
     include "layout/footer.php";

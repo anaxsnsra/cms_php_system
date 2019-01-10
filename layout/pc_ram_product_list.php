@@ -1,6 +1,6 @@
 <div id="myRamBlock" class="modal" style="overflow:scroll">
     <div class="modal-content">
-        <h1>Select PC RAM</h1>
+        <h1 class="selectRam">Select PC RAM</h1>
         <div class="col-lg-9">
             <div class="row">
                 <?php
@@ -36,7 +36,7 @@
                                 <form action='build.php' method='get'>
                                         <input type='hidden' value='$ram_model' name='selectRamModel'>
                                         <input type='hidden' value='$ram_price' name='selectRamPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your ram'>
+                                        <input type='submit' class='btn btn-primary' value='choose'>
                                         </form> 
                                 </div>
                     </div>

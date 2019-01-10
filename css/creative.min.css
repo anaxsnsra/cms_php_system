@@ -135,7 +135,7 @@ img::-moz-selection{
 header.masthead{
     padding-top:10rem;
     padding-bottom:calc(10rem - 56px);
-    background-image:url(../img/header.jpg);
+    background-image:url(../img/background/bg7.jpg);
     background-position:center center;
     background-size:cover
 }
@@ -256,6 +256,10 @@ header.masthead p{
     background-size: cover;
 }
 
+.service_container{
+    margin-top: -100px;
+}
+
 .category{
      padding-top: 10rem;
      padding-bottom: calc(10rem - 56px);
@@ -286,7 +290,7 @@ header.masthead p{
 .payment{
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    background-image: url(../img/background/bg6.jpg);
+    background-image: url();
     background-position: center center;
     background-size: cover;
 }
@@ -527,4 +531,231 @@ textarea{
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.billing{
+    margin-left: 300px;
+    margin-top: -50px;
+}
+
+.delivery{
+    margin-top: -100px;
+}
+
+.itemDetails{
+    margin-top: -170px;
+}
+
+.billText{
+    margin-top: -100px;
+}
+.pr{
+    margin-left: 50px;
+}
+
+.amountText{
+    margin-top: -100px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+}
+
+.amount{
+    padding-bottom: -10px;
+}
+
+ .cc-img {
+     margin: 0 auto;
+ }
+ .buildTitle{
+     font-family: 'Open Sans', sans-serif;
+     color: #555;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 100px;
+     font-weight: 800;
+     letter-spacing: -3px;
+     line-height: 1;
+     text-shadow: #EDEDED 3px 2px 0;
+     position: relative;
+ }
+ .buildTitle:after{
+     content:"build a pc";
+     position: absolute;
+     left: 8px;
+     top: 22px;
+ }
+ .buildTitle:after{
+     background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+     background-size: 4px 4px;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     z-index: -5;
+     display: block;
+     text-shadow: none;
+ }
+ .pcEquipTitle{
+     font-family: "Adobe Hebrew";
+     color: #10707f;
+     margin-top: 20px;
+ }
+
+.selectPc{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.moboSelect{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+
+.selectRam{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.selectCpu{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.selectHdd{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.selectSsd{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.selectGraphicCard{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+.selectPower{
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+}
+#loading{
+    text-align: center;
+    background: url("img/loading/lg.-text-entering-comment-loader.gif") no-repeat center;
+    height: 150px;
+}
+.progressBar{
+    counter-reset: step;
+}
+
+.progressBar li{
+    list-style-type: none;
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+}
+.progressBar li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #dddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressBar li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+
+}
+.progressBar li:first-child:after{
+    content: none;
+}
+.progressBar li.active{
+    color:coral;
+}
+.progressBar li.active:before{
+    border-color: coral;
+}
+.progressBar li.active + li:after{
+    background-color: coral;
+}
+.list-tracking{
+    background-color: rgba(192,192,192,0.3);
+    width: 500px;
+    height: 150px;
+    margin: 100px auto 0 auto;
+    font-size: 12px;
+}
+.address_add{
+    position: center;
+    margin: 100px auto auto 500px;
 }

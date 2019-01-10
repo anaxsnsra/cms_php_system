@@ -3,8 +3,9 @@ include "layout/header_other_pages.php";
 ?>
     <!--Navigation-->
 <?php
-include "layout/navigation.php";
+include "layout/userNavigation.php";
 ?>
+
 
 
 <!--Pc case -->
@@ -30,10 +31,6 @@ include "layout/navigation.php";
 
 <!--pc power supply-->
 <?php include "layout/pc_power_supply_product_list.php"; ?>
-
-<?php
-    if (isset($_POST['']))
-?>
 
 <!--PC CASING MODEL & PRICE-->
 
@@ -153,24 +150,55 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
 }
 ?>
 
+<?php
+//if (isset($_POST['confirmOrder']))
+//{
+//    $cpu_model = $_POST['storedCpu'];
+//    $case_model = $_POST['storedCase'];
+//    $mobo_model = $_POST['storedMobo'];
+//    $gpu_model = $_POST['storedGraphicCard'];
+//    $ram_model = $_POST['storedRam'];
+//    $hdd_model = $_POST['storedHdd'];
+//    $ssd_model = $_POST['storedSSD'];
+//    $psu_model = $_POST['storedPowerSupply'];
+//    $totalAllPc = $_POST['totalValue'];
+//    $username = $_SESSION['username'];
+//    $order_status = "Shipping process";
+//
+//    $query = "INSERT INTO cust_order (customer_username,cpu,gpu,mobo,casing,psu,ram,hdd,ssd,order_date,total_price,item_status) ";
+//    $query .= "VALUES ('{$username}','{$cpu_model}','{$gpu_model}','{$mobo_model}','{$case_model}','{$psu_model}','{$ram_model}','{$hdd_model}','{$ssd_model}',now(),'{$totalAllPc}','{$order_status}') ";
+//
+//    $insert_cust_order = mysqli_query($con,$query);
+//    if (!$insert_cust_order)
+//    {
+//        die("QUERY FAILED" . mysqli_error($con));
+//
+//    }
+//    else
+//    {
+//        header("Location: shipping.php");
+//    }
+//}
 
-<div class="build-container">
-    <h1>Build pc</h1>
-<h4>Choose your pc equipment</h4>
-<div class="row">
+?>
+<form action="shipping.php" method="post">
+<div class="build-container" style="margin-left: 150px">
+    <h1 class="buildTitle">Build a pc</h1>
+<h4 class="pcEquipTitle">Choose your pc equipment</h4>
+    <div class="row">
     <table width="100%" class="table table-hover">
         <tr>
             <td><h6>Case:</h6></td>
             <td>
-                <input type="text" id="case_model" placeholder="select your case" readonly value="<?php echo $_SESSION['storedCaseModel'] ?>">
+                <input type="text" style="width: 300px" name="storedCase" id="case_model" required placeholder="select your case" readonly value="<?php echo $_SESSION['storedCaseModel'] ?>">
             </td>
-            <td><input type="text" id="case_price" name="case_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedCasePrice'] ?>"></td>
+            <td><input type="text" id="case_price" name="case_price" required class="readOnly" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedCasePrice'] ?>"></td>
             <td><input type="button" id="caseBtn" onclick="casePc()" class="btn btn-dark" name="choose_case" value="Choose"></td>
         </tr>
         <tr>
             <td><h6>Motherboard:</h6></td>
             <td>
-                <input type="text" placeholder="select your motherboard" readonly value="<?php echo $_SESSION['storedMoboModel']?>">
+                <input type="text" style="width: 300px" name="storedMobo" id="moboModel" placeholder="select your motherboard" readonly value="<?php echo $_SESSION['storedMoboModel']?>">
             </td>
             <td><input type="text" name="motherboard_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedMoboPrice'] ?>"></td>
             <td><input type="button" id="moboBtn" onclick="mobo()" class="btn btn-dark" name="choose_case" value="Choose"></td>
@@ -178,7 +206,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td><h6>CPU:</h6></td>
             <td>
-                <input type="text" name="cpu" placeholder="select your cpu" readonly value="<?php echo $_SESSION['storedCpuModel'] ?>">
+                <input type="text" style="width: 300px" name="storedCpu" id="cpu_model" placeholder="select your cpu" readonly value="<?php echo $_SESSION['storedCpuModel'] ?>">
             </td>
             <td><input type="text" name="cpu_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedCpuPrice'] ?>"></td>
             <td><input type="button" id="cpuBtnl" onclick="cpuBtnDisplay()" class="btn btn-dark" name="choose_cpu" value="Choose"></td>
@@ -186,7 +214,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td><h6>RAM:</h6></td>
             <td>
-                <input type="text" name="ram" placeholder="select your ram" readonly value="<?php echo $_SESSION['storedRamModel'] ?>" >
+                <input type="text" style="width: 300px" name="storedRam" id="ramModel" placeholder="select your ram" readonly value="<?php echo $_SESSION['storedRamModel'] ?>" >
             </td>
             <td><input type="text" name="ram_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedRamPrice'] ?>"></td>
             <td><input type="button" id="ramBtnl" onclick="ramBtnDisplay()" class="btn btn-dark" name="choose_ram" value="Choose"></td>
@@ -194,7 +222,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td><h6>Hard Disk:</h6></td>
             <td>
-                <input type="text" name="hard_disk" placeholder="select your HDD" readonly value="<?php echo $_SESSION['storedHddModel'] ?>" >
+                <input type="text" style="width: 300px" name="storedHdd" id="hddModel" placeholder="select your HDD" readonly value="<?php echo $_SESSION['storedHddModel'] ?>" >
             </td>
             <td><input type="text" name="hard_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedHddPrice'] ?>"></td>
             <td><input type="button" id="hddBtnl" onclick="hddBtnDisplay()" class="btn btn-dark" name="choose_hard_disk" value="Choose"></td>
@@ -202,7 +230,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td><h6>SSD:</h6></td>
             <td>
-                <input type="text" name="ssd" placeholder="select your SSD" readonly value="<?php  echo $_SESSION['storedSSDModel'] ?>" >
+                <input type="text" style="width: 300px" name="storedSSD" id="ssdModel" placeholder="select your SSD" readonly value="<?php  echo $_SESSION['storedSSDModel'] ?>" >
             </td>
             <td><input type="text" name="ssd_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedSSDPrice'] ?>"></td>
             <td><input type="button" onclick="ssdBtnDisplay()" id="ssdBtnl" class="btn btn-dark" name="choose_ssd_disk" value="Choose"></td>
@@ -210,7 +238,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td><h6>Graphic Card:</h6></td>
             <td>
-                <input type="text" name="graphic_card" placeholder="select your Graphic Card" readonly value="<?php echo $_SESSION['storedGraphicCardModel'] ?>" >
+                <input type="text" style="width: 300px" name="storedGraphicCard" id="GraphicCardModel" placeholder="select your Graphic Card" readonly value="<?php echo $_SESSION['storedGraphicCardModel'] ?>" >
             </td>
             <td><input type="text" name="graphic_card_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedGraphicCardPrice'] ?>"></td>
             <td><input type="button" onclick="graphicCardBtnDisplay()" id="GraphicCardBtnl" class="btn btn-dark" name="choose_graphic_card" value="Choose"></td>
@@ -220,7 +248,7 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
                 <label for="case">Power Supply:</label>
             </td>
             <td>
-                <input type="text" name="power_supply" placeholder="select your Power supply" readonly value="<?php echo $_SESSION['storedPowerSupplyModel'] ?>" >
+                <input type="text" style="width: 300px" name="storedPowerSupply" id="powerSupplyModel" placeholder="select your Power supply" readonly value="<?php echo $_SESSION['storedPowerSupplyModel'] ?>" >
             </td>
             <td><input type="text" name="power_supply_price" placeholder="RM 0" readonly value="<?php echo $_SESSION['storedPowerSupplyPrice'] ?>"></td>
             <td><input type="button" id="powerBtnl" onclick="powerSupplyDisplay()" class="btn btn-dark" name="choose_power_supply" value="Choose"></td>
@@ -228,26 +256,38 @@ elseif (!isset($_SESSION['storedPowerSupplyPrice']) || $_SESSION['storedPowerSup
         <tr>
             <td></td>
             <td><label for="Total">Total price</label></td>
-            <td><?php echo (int)$_SESSION['storedCasePrice']
-                    +   (int)$_SESSION['storedMoboPrice']
-                    +   (int)$_SESSION['storedGraphicCardPrice']
-                    +   (int)$_SESSION['storedHddPrice']
-                    +   (int)$_SESSION['storedSSDPrice']
-                    +   (int)$_SESSION['storedRamPrice']
-                    +   (int)$_SESSION['storedCpuPrice']
-                    +   (int)$_SESSION['storedPowerSupplyPrice'];
-                ?>
+            <?php
+                if (!$totalPrice = "") {
+                    $totalPrice = (int)$_SESSION['storedCasePrice']
+                        + (int)$_SESSION['storedMoboPrice']
+                        + (int)$_SESSION['storedGraphicCardPrice']
+                        + (int)$_SESSION['storedHddPrice']
+                        + (int)$_SESSION['storedSSDPrice']
+                        + (int)$_SESSION['storedRamPrice']
+                        + (int)$_SESSION['storedCpuPrice']
+                        + (int)$_SESSION['storedPowerSupplyPrice'];
+                }
+                else
+                {
+                    $totalPrice = "";
+                }
+
+            ?>
+            <td><input type="text" name="totalValue" value="<?php echo $totalPrice; ?>" readonly>
             </td>
             <td>
-                <form action="" method="post">
-                <input type="button" class="btn btn-dark" value="Make Order" name="confirmOrder">
-                </form>
+                <input type="submit" class="btn btn-dark" onclick="return empty()" value="Order" name="confirmOrder">
             </td>
         </tr>
     </table>
 </div>
 </div>
-
+</form>
+<form action="layout/reset.php">
+    <div style="margin-left: 850px">
+    <input type="submit" onclick="javascript: return confirm('Are you sure you want to proceed?');" class="btn btn-danger" value="clear all">
+    </div>
+</form>
 
 
 <!-- Footer -->

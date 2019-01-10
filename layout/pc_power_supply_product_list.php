@@ -1,6 +1,6 @@
 <div id="myPowerSupplyBlock" class="modal" style="overflow:scroll">
     <div class="modal-content" style="width: 1200px">
-        <h1>Select Power Supply</h1>
+        <h1 class="selectPower">Select Power Supply</h1>
         <div class="col-lg-9">
             <div class="row">
                 <?php
@@ -33,7 +33,7 @@
                                 <small class='text-muted'><form action='build.php' method='get'>
                                         <input type='hidden' value='$power_supply_model' name='selectPowerSupplyModel'>
                                         <input type='hidden' value='$power_supply_price' name='selectPowerSupplyPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your Graphic card'>
+                                        <input type='submit' class='btn btn-primary' value='choose'>
                                         </form> </small>
                                 </div>
                     </div>

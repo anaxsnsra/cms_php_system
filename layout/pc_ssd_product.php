@@ -1,6 +1,6 @@
 <div id="mySsdBlock" class="modal" style="overflow:scroll">
     <div class="modal-content" style="width: 1200px">
-        <h1>Select SSD</h1>
+        <h1 class="selectSsd">Select SSD</h1>
         <div class="col-lg-9">
             <div class="row">
                 <?php
@@ -19,7 +19,7 @@
 
                     echo "<div class='col-lg-4 col-md-6 mb-4'>
                             <div class='card h-100'>
-                                 <img class='card-img-top' width='360px' height='300px' src='img/pc%20product/ssd/$pc_ssd_image'>
+                                 <img class='card-img-top' width='360px' height='200px' src='img/pc%20product/ssd/$pc_ssd_image'>
                                     <div class='card-body'>
                                         <h4 class='card-title'>
                                             <a href='#'>$ssd_brand  $ssd_model</a>
@@ -33,7 +33,7 @@
                                 <form action='build.php' method='get'>
                                         <input type='hidden' value='$ssd_model' name='selectSSDModel'>
                                         <input type='hidden' value='$ssd_price' name='selectSSDPrice'>
-                                        <input type='submit' class='btn btn-primary' value='choose your SSD'>
+                                        <input type='submit' class='btn btn-primary' value='choose'>
                                         </form> 
                                 </div>
                     </div>

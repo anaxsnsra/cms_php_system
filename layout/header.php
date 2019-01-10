@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Erina's Pc Workshop</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,11 +39,11 @@ session_start();
             <div class="col-lg-10 mx-auto">
             </div>
             <div class="col-lg-8 mx-auto">
-                <div class="form-group text-center"><img class="img-thumbnail mx-auto" width="200px" height="200px" src="img/headerPcPhoto/pc.gif"/></div>
-                <p class="text-faded mb-5">Erina Pc Workshop provide services for the customers that interested to customize their own PC and sell product for PC equipment</p>
+                <div class="form-group text-center" style="margin-left: -100px"><img class="mx-auto" width="1000px" height="300px" src="./img/banner-fyp.gif"/></div>
+                <p class="text-faded mb-5" style="color: #59ff00; font-family: Verdana; font-style: oblique; font-size: 22px">Erina Pc Workshop provide services for the customers that interested to customize their own PC and sell product for PC equipment</p>
                 <hr>
-                <p class="text-faded mb-5">Build Your Own PC!</p>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">LET'S BUILD</a>
+                <p class="text-faded mb-5" style="color: #59ff00; font-family: Verdana; font-style: oblique; font-size: 22px" >Build Your Own PC!</p>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="./build.php">LET'S BUILD</a>
             </div>
         </div>
     </div>

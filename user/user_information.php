@@ -8,6 +8,7 @@ if (isset($_SESSION['username']))
     $select_user_profile_query = mysqli_query($con,$query);
     while($row = mysqli_fetch_array($select_user_profile_query))
     {
+        $user_id = $row['user_id'];
         $username = $row['username'];
         $user_firstname = $row['user_firstname'];
         $user_lastname = $row['user_lastname'];
@@ -15,6 +16,7 @@ if (isset($_SESSION['username']))
         $user_email = $row['user_email'];
         $user_phone = $row['user_phone'];
         $user_role = $row['user_role'];
+        $user_address = $row['address_id'];
     }
 }
 
@@ -40,15 +42,22 @@ if (isset($_SESSION['username']))
         <div>&nbsp;</div>
         <div><span>DEFAULT SHIPPING ADDRESS</span></div>
         <div>&nbsp;</div>
-        <div><?php echo $user_firstname . " " . $user_lastname ?></div>
         <?php
-        $query = "SELECT * FROM address WHERE address_id = {$_SESSION['address_id']}";
-        $select_address_id = mysqli_query($con,$query);
-        while ($row = mysqli_fetch_array($select_address_id))
+        if ($user_address == 0 || $user_address == "")
         {
-            $address_id = $row['address_id'];
-            $address_line_one = $row['address_line_one'];
-            echo "<div>{$address_line_one}</div>";
+            echo "<button class='btn btn-light'>
+                    <a href='./address_add.php' class='fa fa-plus' style='position: center'>Please add address</a>
+                    </button>";
+        }
+        else{
+            $address_query = "SELECT * FROM address WHERE user_id = '{$user_id}'";
+            $select_user_address = mysqli_query($con,$address_query);
+            while ($row = mysqli_fetch_assoc($select_user_address))
+            {
+                $user_address_line = $row['address_line_one'];
+
+                echo "<div>$user_address_line</div>";
+            }
         }
         ?>
         <div><?php echo $user_phone ?></div>
